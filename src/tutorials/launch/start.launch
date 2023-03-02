@@ -1,0 +1,8 @@
+<launch>
+    <!-- <node pkg="lab1" type="script.py" name="mynoda" output="screen">
+    </node>
+    <node pkg="lab1" type="script2.py" name="slukhach" output="screen">
+    </node> -->
+    <node pkg="tutorials" type="drone_spiral.py" name="forward" output="screen">
+    </node>
+</launch>
