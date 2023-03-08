@@ -1,3 +1,8 @@
 src/geographic_info
 src/hector_quadrotor_noetic
 src/unique_identifier
+build/
+.vscode/
+.idea/
+devel/
+src/teleop_twist_keyboard
