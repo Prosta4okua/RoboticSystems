@@ -41,12 +41,12 @@ def getkey():
 
 def keyboard_check():
     try:
-        while True:
-            k = getkey()
-            if k == 'esc':
-                quit()
-            else:
-                return k
+        # while True:
+        k = getkey()
+        if k == 'esc':
+            quit()
+        else:
+            return k
     except (KeyboardInterrupt, SystemExit):
         os.system('stty sane')
         print('stopping.')
@@ -72,7 +72,7 @@ class Robot:
                 print("You've printed", key)
                 response = get_message(key)
                 rospy.loginfo(response.res)
-                rate.sleep()
+                # rate.sleep()
             except rospy.ServiceException as e:
                 print("Service call failed %s", e)
 
