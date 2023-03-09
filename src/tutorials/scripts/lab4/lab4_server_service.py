@@ -57,8 +57,6 @@ class MyService:
 class MyPublisher:
     def __init__(self) -> None:
         self.publisher = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
-        # rospy.init_node("publisher_node", anonymous=True)
-        # self.rate = rospy.Rate(1)
     def publish(self, twist):
         while not rospy.is_shutdown():
             self.publisher.publish(twist)
