@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import rospy
 # you import the service message python classes generated from Empty.srv.
-from simple_rosservise.srv import MySrvType, MySrvTypeResponse
+from tutorials.srv import MySrvType, MySrvTypeResponse
 
 
 def my_callback(request):

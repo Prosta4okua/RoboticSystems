@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
-  tkinter
+## tkinter
 )
 
 ## System dependencies are found with CMake's conventions
@@ -58,6 +58,7 @@ add_service_files(
   FILES
   multiplier.srv
   MySrvType.srv
+  move_key.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -109,7 +110,7 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-catkin_install_python(PROGRAMS scripts/subscriber_node.py scripts/service_server_node.py
+catkin_install_python(PROGRAMS scripts/lab2/subscriber_node.py scripts/examples/service_server_node.py scripts/examples/service_client_node.py scripts/lab4/lab4_client_service.py scripts/lab4/lab4_server_service.py
   DESTINATION $(CATKIN_PACKAGE_BIN_DESTINATION)
 )
 
